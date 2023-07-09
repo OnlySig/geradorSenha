@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genPass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="content">
+        <h1 class="title marginB">gerador de senha</h1>
+        <div class="card__password">
+            <p class="valor">Tamanho <span id="valor"></span> caracteres</p>
+            <input type="range" class="input__tamanho marginB" id="slide" min="5" max="25" value="5">
+            <button class="botao marginB" id="botaoSenha" type="submit">Gerar senha</button>
+            <div class="container__password">
+                <h2 class="textCenter marginBs">Sua senha gerada foi:</h2>
+                <div class="textCenter marginBs bg__senha off" id="password">SenhaTest</div>
+                <span class="textCenter textLine">Clique na senha para copiar.👆</span>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181c22;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: #FFFFFF;
+}
+
+.marginBs {
+    margin-bottom: 5px;
+}
+
+.marginB {
+    margin-bottom: 25px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.card__password {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.botao {
+    height: 25px;
+    background-color: #00ADB5;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bg__senha {
+    background-color: #000000;
+    cursor: pointer;
+    border: 1px solid #474e58;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform .5s ;
+}
+
+.off {
+    display: none;
+}
+
+.textLine {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #474e58;
+    background-color: #000000;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+
+.container__password:hover .textLine{
+    visibility: visible;
+    opacity: 1;
+}
+
+.bg__senha:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+.valor {
+    font-size: 1.2rem;
+}
